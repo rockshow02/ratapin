@@ -13,7 +13,7 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
 
-      const sections = ['home', 'about', 'contact']
+      const sections = ['home', 'about', 'products', 'contact']
       const scrollPosition = window.scrollY + 100
 
       sections.forEach((id) => {
@@ -46,10 +46,9 @@ export default function Header() {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <Link href="#home" className="logo-container" onClick={scrollToTop}>
         <div className="logo">
-          {/* Ganti dengan gambar Anda */}
           <Image 
             src="/images/logo-42a7f0c9.png" 
-            alt="3D Coverflow Logo" 
+            alt="Ratapin Logo" 
             width={50} 
             height={50}
             style={{ objectFit: 'contain' }}
@@ -61,6 +60,7 @@ export default function Header() {
       <nav className={`main-menu ${menuOpen ? 'active' : ''}`}>
         <Link href="#home" className={`menu-item ${activeSection === 'home' ? 'active' : ''}`} onClick={handleMenuClick}>Home</Link>
         <Link href="#about" className={`menu-item ${activeSection === 'about' ? 'active' : ''}`} onClick={handleMenuClick}>About</Link>
+        <Link href="#products" className={`menu-item ${activeSection === 'products' ? 'active' : ''}`} onClick={handleMenuClick}>Products</Link>
         <Link href="#contact" className={`menu-item ${activeSection === 'contact' ? 'active' : ''}`} onClick={handleMenuClick}>Contact</Link>
       </nav>
       

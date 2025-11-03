@@ -4,18 +4,122 @@ import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 
 const imageData = [
-  { title: "MAXXI Shingles", description: "Atap MAXXI Shingles heksagonal, tahan lama, estetis, dan fungsional.", src: "/images/MAXXI-Shingles.png" },
-  { title: "Baja Ringan", description: "Baja ringan kuat, tahan lama, efisien, dan mudah dipasang.", src: "/images/Baja-ringan.png" },
-  { title: "Tamco Shingles", description: "Tamco Shingles, atap elegan, tahan lama, dengan variasi warna menarik.", src: "/images/Tamco-Shingles.png" },
-  { title: "Genteng Metal", description: "Genteng metal kuat, ringan, tahan lama, dan mudah perawatannya.", src: "/images/Genteng-Metal.png" },
-  { title: "Victory Shingles", description: "Victory Shingles: Atap estetis, tahan lama, penuhi impian desain klasik Anda.", src: "/images/Victory-Shingles.png" },
-  { title: "Tegola Shingles", description: "Tegola Shingles: Atap Bitumen kuat, estetis modern, lindungi rumah elegan Anda.", src: "/images/Tegola-Shingles.png" },
+  { 
+    title: "MAXXI Shingles", 
+    description: "Atap MAXXI Shingles heksagonal, tahan lama, estetis, dan fungsional.", 
+    src: "/images/MAXXI-Shingles.png",
+    price: "Rp 125.000/m²",
+    features: [
+      "Desain heksagonal modern",
+      "Tahan cuaca ekstrem",
+      "Garansi 25 tahun",
+      "Mudah dipasang"
+    ],
+    specs: {
+      material: "Bitumen berkualitas tinggi",
+      ketebalan: "3mm",
+      berat: "12 kg/m²",
+      warna: "Berbagai pilihan"
+    }
+  },
+  { 
+    title: "Baja Ringan", 
+    description: "Baja ringan kuat, tahan lama, efisien, dan mudah dipasang.", 
+    src: "/images/Baja-ringan.png",
+    price: "Rp 45.000/meter",
+    features: [
+      "Anti karat dan korosi",
+      "Ringan namun kuat",
+      "Ramah lingkungan",
+      "Pemasangan cepat"
+    ],
+    specs: {
+      material: "Galvanis berkualitas",
+      ketebalan: "0.75mm - 1mm",
+      berat: "Sangat ringan",
+      finishing: "Galvanis/Zincalume"
+    }
+  },
+  { 
+    title: "Tamco Shingles", 
+    description: "Tamco Shingles, atap elegan, tahan lama, dengan variasi warna menarik.", 
+    src: "/images/Tamco-Shingles.png",
+    price: "Rp 135.000/m²",
+    features: [
+      "Elegan dan premium",
+      "Variasi warna lengkap",
+      "Tahan UV dan panas",
+      "Instalasi profesional"
+    ],
+    specs: {
+      material: "Bitumen premium",
+      ketebalan: "3.2mm",
+      berat: "13 kg/m²",
+      garansi: "30 tahun"
+    }
+  },
+  { 
+    title: "Genteng Metal", 
+    description: "Genteng metal kuat, ringan, tahan lama, dan mudah perawatannya.", 
+    src: "/images/Genteng-Metal.png",
+    price: "Rp 85.000/lembar",
+    features: [
+      "Anti bocor 100%",
+      "Tahan lama 15+ tahun",
+      "Berbagai pilihan warna",
+      "Perawatan minimal"
+    ],
+    specs: {
+      material: "Metal berlapis pasir",
+      ketebalan: "0.3mm - 0.4mm",
+      berat: "7 kg/m²",
+      dimensi: "Customizable"
+    }
+  },
+  { 
+    title: "Victory Shingles", 
+    description: "Victory Shingles: Atap estetis, tahan lama, penuhi impian desain klasik Anda.", 
+    src: "/images/Victory-Shingles.png",
+    price: "Rp 115.000/m²",
+    features: [
+      "Desain klasik elegan",
+      "Kualitas terjamin",
+      "Tahan segala cuaca",
+      "Mudah maintenance"
+    ],
+    specs: {
+      material: "Aspal bitumen",
+      ketebalan: "3mm",
+      berat: "11 kg/m²",
+      garansi: "20 tahun"
+    }
+  },
+  { 
+    title: "Tegola Shingles", 
+    description: "Tegola Shingles: Atap Bitumen kuat, estetis modern, lindungi rumah elegan Anda.", 
+    src: "/images/Tegola-Shingles.png",
+    price: "Rp 145.000/m²",
+    features: [
+      "Premium quality",
+      "Estetika modern",
+      "Proteksi maksimal",
+      "Brand terpercaya"
+    ],
+    specs: {
+      material: "Bitumen Italia",
+      ketebalan: "3.5mm",
+      berat: "14 kg/m²",
+      garansi: "35 tahun"
+    }
+  },
 ]
 
 export default function HomeSection() {
   const [currentIndex, setCurrentIndex] = useState(3)
   const [isAnimating, setIsAnimating] = useState(false)
   const [isPlaying, setIsPlaying] = useState(true)
+  const [showPopup, setShowPopup] = useState(false)
+  const [selectedProduct, setSelectedProduct] = useState(null)
   const containerRef = useRef(null)
   const autoplayRef = useRef(null)
 
@@ -37,6 +141,17 @@ export default function HomeSection() {
   const goToIndex = (index) => {
     if (isAnimating || index === currentIndex) return
     updateCoverflow(index)
+  }
+
+  const openPopup = (index) => {
+    setSelectedProduct(imageData[index])
+    setShowPopup(true)
+    stopAutoplay()
+  }
+
+  const closePopup = () => {
+    setShowPopup(false)
+    setSelectedProduct(null)
   }
 
   const startAutoplay = () => {
@@ -73,6 +188,10 @@ export default function HomeSection() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
+      if (showPopup && e.key === 'Escape') {
+        closePopup()
+        return
+      }
       if (e.key === 'ArrowLeft') {
         handleUserInteraction()
         navigate(-1)
@@ -93,7 +212,7 @@ export default function HomeSection() {
         container.removeEventListener('keydown', handleKeyDown)
       }
     }
-  }, [currentIndex, isAnimating])
+  }, [currentIndex, isAnimating, showPopup])
 
   // Touch/swipe support
   useEffect(() => {
@@ -196,8 +315,12 @@ export default function HomeSection() {
                 className={`coverflow-item ${index === currentIndex ? 'active' : ''}`}
                 style={getItemStyle(index)}
                 onClick={() => {
-                  handleUserInteraction()
-                  goToIndex(index)
+                  if (index === currentIndex) {
+                    openPopup(index)
+                  } else {
+                    handleUserInteraction()
+                    goToIndex(index)
+                  }
                 }}
               >
                 <div className="cover">
@@ -237,6 +360,80 @@ export default function HomeSection() {
           </button>
         </div>
       </div>
+
+      {/* Product Detail Popup */}
+      {showPopup && selectedProduct && (
+        <div className="product-popup-overlay" onClick={closePopup}>
+          <div className="product-popup" onClick={(e) => e.stopPropagation()}>
+            <button className="popup-close" onClick={closePopup}>×</button>
+            
+            <div className="popup-content">
+              <div className="popup-image">
+                <Image
+                  src={selectedProduct.src}
+                  alt={selectedProduct.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              
+              <div className="popup-details">
+                <h3>{selectedProduct.title}</h3>
+                <p className="popup-description">{selectedProduct.description}</p>
+                <div className="popup-price">{selectedProduct.price}</div>
+                
+                <div className="popup-section">
+                  <h4>Keunggulan Produk</h4>
+                  <ul className="popup-features">
+                    {selectedProduct.features.map((feature, idx) => (
+                      <li key={idx}>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="popup-section">
+                  <h4>Spesifikasi</h4>
+                  <div className="popup-specs">
+                    {Object.entries(selectedProduct.specs).map(([key, value]) => (
+                      <div key={key} className="spec-item">
+                        <span className="spec-label">{key.charAt(0).toUpperCase() + key.slice(1)}:</span>
+                        <span className="spec-value">{value}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div className="popup-actions">
+                  <a 
+                    href={`https://wa.me/6281234567890?text=Halo%20Ratapin,%20saya%20tertarik%20dengan%20${encodeURIComponent(selectedProduct.title)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="popup-cta primary"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.52 3.449C18.297 1.233 15.322 0 12.214 0 5.56 0 .146 5.414.146 12.068c0 2.127.553 4.206 1.605 6.041L.057 24l6.054-1.588a12.054 12.054 0 005.102 1.095h.005c6.653 0 12.067-5.414 12.067-12.068 0-3.226-1.258-6.258-3.763-8.99zm-8.306 18.55h-.004a9.976 9.976 0 01-5.087-1.393l-.365-.217-3.782.992.99-3.629-.239-.379a9.944 9.944 0 01-1.525-5.311c0-5.498 4.474-9.971 9.979-9.971 2.664 0 5.167 1.039 7.053 2.925a9.909 9.909 0 012.919 7.053c-.001 5.498-4.475 9.971-9.979 9.971z"/>
+                    </svg>
+                    Pesan via WhatsApp
+                  </a>
+                  <a 
+                    href={`https://wa.me/6281234567890?text=Halo%20Ratapin,%20saya%20ingin%20menanyakan%20detail%20${encodeURIComponent(selectedProduct.title)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="popup-cta secondary"
+                  >
+                    Tanya Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
