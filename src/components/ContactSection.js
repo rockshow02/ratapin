@@ -1,24 +1,18 @@
 'use client'
 
 export default function ContactSection() {
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    alert("Thank you for your message! We'll get back to you soon.")
-    e.target.reset()
-  }
-
   return (
     <section id="contact" className="section">
       <div className="contact-content">
         <div className="contact-header">
-          <h2>Get In Touch</h2>
-          <p>Have a project in mind? Let&apos;s create something amazing together.</p>
+          <h2>Hubungi Kami</h2>
+          <p>Punya rencana pemasangan atau perbaikan atap? Mari wujudkan atap kuat dan estetis impian Anda.</p>
         </div>
         
-        <div className="contact-container">
+        <div className="contact-container-centered">
           <div className="contact-info-section">
-            <h3>Let&apos;s Connect</h3>
-            <p>We&apos;re here to help bring your vision to life. Whether you need a stunning gallery, a complete website redesign, or custom development work, we&apos;d love to hear from you.</p>
+            <h3>Mulai Konsultasi Atap Gratis</h3>
+            <p>Kami siap membantu Anda dari perencanaan hingga penyelesaian proyek. Dapatkan saran material terbaik, estimasi biaya transparan, dan solusi atap profesional yang sesuai dengan kebutuhan dan anggaran Anda.</p>
             
             <div className="contact-details">
               <div className="contact-item">
@@ -95,28 +89,6 @@ export default function ContactSection() {
                 </a>
               </div>
             </div>
-          </div>
-          
-          <div className="contact-form-section">
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">Your Name</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email Address</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-              <button type="submit" className="submit-btn">Send Message</button>
-            </form>
           </div>
         </div>
       </div>

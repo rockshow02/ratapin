@@ -8,9 +8,8 @@ const imageData = [
   { title: "Baja Ringan", description: "Baja ringan kuat, tahan lama, efisien, dan mudah dipasang.", src: "/images/Baja-ringan.png" },
   { title: "Tamco Shingles", description: "Tamco Shingles, atap elegan, tahan lama, dengan variasi warna menarik.", src: "/images/Tamco-Shingles.png" },
   { title: "Genteng Metal", description: "Genteng metal kuat, ringan, tahan lama, dan mudah perawatannya.", src: "/images/Genteng-Metal.png" },
-  { title: "Desert Dunes", description: "Rolling sand dunes under vast blue skies", src: "/images/rolling-sand-dunes.jpg" },
-  { title: "Starry Night", description: "Countless stars illuminating the dark sky", src: "/images/starry-night.jpg" },
-  { title: "Waterfall", description: "Cascading water through lush green forest", src: "/images/cascading-waterfall.jpg" }
+  { title: "Victory Shingles", description: "Victory Shingles: Atap estetis, tahan lama, penuhi impian desain klasik Anda.", src: "/images/Victory-Shingles.png" },
+  { title: "Tegola Shingles", description: "Tegola Shingles: Atap Bitumen kuat, estetis modern, lindungi rumah elegan Anda.", src: "/images/Tegola-Shingles.png" },
 ]
 
 export default function HomeSection() {
