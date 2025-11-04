@@ -399,102 +399,74 @@ const imageData = [
   },
   { 
     title: "Victory Shingles", 
-    description: "Victory Shingles: Atap estetis, tahan lama, penuhi impian desain klasik Anda.", 
-    src: "/images/Victory-Shingles.png",
+    description: "Victory Shingles: Ringan, elegan, tahan lama, anti bocor, mudah pasang, bergaya modern.", 
+    src: "/images/Victory-Standard.png",
     gallery: [
       { 
-        src: "/images/Victory-Shingles.png", 
-        label: "Standard",
-        price: "Rp 115.000/m²",
-        description: "Seri standard dengan kualitas terjamin",
+        src: "/images/Victory-Standard.png", 
+        label: "Victory - Standard",
+        price: "Rp 559.240/bundle",
+        description: "Ringan, elegan, tahan bocor, kuat, modern, praktis.",
         features: [
-          "Desain klasik elegan",
-          "Kualitas terjamin",
-          "Tahan segala cuaca",
-          "Mudah maintenance"
+          "Genteng aspal bitumen ekonomis dengan desain 3-tab persegi.",
+          "Dilengkapi fitur Algae Relief (anti lumut & jamur).",
+          "Cocok untuk iklim tropis Indonesia dengan kelembaban tinggi.",
+          "Tetap bersih seperti baru meski terpapar cuaca ekstrem.",
+          "Pemasangan mudah & cepat, tanpa peralatan khusus.",
+          "Desain flat dan fleksibel cocok untuk berbagai bentuk atap.",
+          "Bobot ringan, aman untuk struktur bangunan dan area rawan gempa.",
+          "Tidak membebani konstruksi, berbeda dengan atap konvensional yang lebih berat.",
+          "Garansi hingga 20 tahun untuk ketahanan material.",
+          "Solusi atap ekonomis namun tetap berkualitas untuk rumah & bangunan modern."
         ],
         specs: {
-          material: "Aspal bitumen",
-          ketebalan: "3mm",
-          berat: "11 kg/m²",
-          garansi: "20 tahun"
+          Garansi: "20 Tahun",
+          Material: "Algae Relief",
+          Dimensi: "1000 mm x 334 mm / Lembar",
+          Area: "3.1m2 / Bundle",
+          berat: " 8.50 Kg / m2",
+          WindResistance: " 96.5 Km / jam",
+          Tebal: "3mm"
         },
         colors: [
-          { name: "Autumn Brown", hex: "#8B4513" },
-          { name: "Shadow Grey", hex: "#708090" },
-          { name: "Forest Green", hex: "#228B22" }
+          { name: "Black", hex: "#000000" },
+          { name: "Red", hex: "#FF0000" },
+          { name: "Green", hex: "#00FF00" },
+          { name: "Grey", hex: "#808080" }
         ]
       },
       { 
-        src: "/images/victory-type-1.png", 
-        label: "Premium",
-        price: "Rp 125.000/m²",
-        description: "Seri premium dengan kualitas lebih baik",
+        src: "/images/Victory-Dualtone.png", 
+        label: "Victory - Dualtone",
+        price: "Rp. 613.800/bundle",
+        description: "Elegan, dua warna, tahan bocor, ringan, modern, stylish.",
         features: [
-          "Material premium",
-          "Warna tidak pudar",
-          "Garansi 25 tahun",
-          "Best value"
+          "Garansi material 20 tahun untuk keamanan investasi jangka panjang.",
+          "Coating batuan warna solid dibakar pada suhu 2000°C untuk daya tahan maksimal.",
+          "Dilengkapi algae relief untuk mencegah lumut & jamur pada atap.",
+          "Waterproofing optimal berkat lapisan batuan coating tahan air.",
+          "Batuan warna berfungsi memantulkan UV, membuat rumah lebih sejuk.",
+          "Desain 3-tab persegi memberi tampilan rapi & estetis.",
+          "Cocok untuk berbagai jenis bangunan yang mengutamakan keindahan tampilan atap",
+          "Presisi ukuran tinggi toleransi kurang dari 1 mm.",
+          "Hasil pemasangan lebih rapi, NAT lurus tanpa pergeseran garis.",
+          "Tetap awet & bersih dalam jangka panjang karena proteksi jamur, UV, dan cuaca."
         ],
         specs: {
-          material: "Aspal modified",
-          ketebalan: "3.2mm",
-          berat: "11.5 kg/m²",
-          garansi: "25 tahun"
+          Garansi: "20 Tahun",
+          Dimensi: "1000 mm x 320 mm / Lembar",
+          Area: "3 m2 / Bundle",
+          berat: " 8.50 Kg / m2",
+          Bundle: "22 Lembar",
+          Tebal: "3mm"
         },
         colors: [
-          { name: "Charcoal Black", hex: "#36454F" },
-          { name: "Rustic Red", hex: "#8B0000" },
-          { name: "Slate Blue", hex: "#6A5ACD" }
+          { name: "Shadow Black", hex: "#1A1A1A" },
+          { name: "Garnet Red", hex: "#830E0D" },
+          { name: "Siera Brown", hex: "#905E3C" },
+          { name: "Shapire Blue", hex: "#0F52BA" }
         ]
       },
-      { 
-        src: "/images/victory-type-2.png", 
-        label: "Deluxe",
-        price: "Rp 135.000/m²",
-        description: "Seri deluxe untuk rumah mewah",
-        features: [
-          "Luxury design",
-          "Extra durability",
-          "Garansi 28 tahun",
-          "Premium service"
-        ],
-        specs: {
-          material: "Aspal premium plus",
-          ketebalan: "3.4mm",
-          berat: "12 kg/m²",
-          garansi: "28 tahun"
-        },
-        colors: [
-          { name: "Onyx Black", hex: "#353839" },
-          { name: "Pewter Grey", hex: "#91989F" },
-          { name: "Terra Cotta", hex: "#E2725B" }
-        ]
-      },
-      { 
-        src: "/images/victory-type-3.png", 
-        label: "Elite",
-        price: "Rp 148.000/m²",
-        description: "Seri elite untuk proyek eksklusif",
-        features: [
-          "Top quality",
-          "Exclusive design",
-          "Garansi 30 tahun",
-          "VIP installation"
-        ],
-        specs: {
-          material: "Aspal architectural",
-          ketebalan: "3.8mm",
-          berat: "13 kg/m²",
-          garansi: "30 tahun"
-        },
-        colors: [
-          { name: "Midnight Black", hex: "#000000" },
-          { name: "Platinum Grey", hex: "#E5E4E2" },
-          { name: "Mahogany", hex: "#C04000" },
-          { name: "Deep Blue", hex: "#00416A" }
-        ]
-      }
     ]
   },
   { 
