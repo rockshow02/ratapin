@@ -711,6 +711,109 @@ const imageData = [
       },
     ]
   },
+  { 
+    title: "CTI Shingles", 
+    description: "CTI Shingles: Ringan, tahan lama, estetis, anti bocor, fleksibel, tahan cuaca ekstrem.", 
+    src: "/images/CT3-Rectangular.png",
+    gallery: [
+      { 
+        src: "/images/CT3-Rectangular.png", 
+        label: "CT3 - Rectangular",
+        price: "Rp 450.000/bundle",
+        description: "Ringkas, kuat, elegan, tahan lama, modern, praktis.",
+        features: [
+          "Genteng aspal/atap bitumen 3-tab produksi Indonesia",
+          "Satu-satunya asphalt shingles buatan anak bangsa",
+          "Khusus untuk pasar Indonesia dengan value tinggi",
+          "Perlindungan material hingga 20 tahun (lifetime warranty)",
+          "Cocok untuk berbagai jenis bangunan",
+          "Tahan air total, aman dari kebocoran",
+          "Fitur adhesive bitumen di bagian bawah",
+          "Cukup cabut plastik film HDPE, tambah paku untuk kekuatan ekstra",
+          "Kualitas produksi terkontrol dan terpercaya",
+          "Bukti keandalan dan kualitas di lapangan"
+        ],
+        specs: {
+          Garansi: "20 Tahun",
+          Bundle: "21 Lembar",
+          Dimensi: "1000 mm x 333 mm / Lembar",
+          Area: "3m2 / Bundle",
+          berat: " 8.50 Kg / m2",
+          Tebal: "3mm"
+        },
+        colors: [
+          { name: "Black", hex: "#000000" },
+          { name: "Red", hex: "#FF0000" },
+          { name: "Green", hex: "#00FF00" },
+          { name: "Gold", hex: "#FFD700" }
+        ]
+      },
+      { 
+        src: "/images/CT5-Gothik2.png", 
+        label: "CT5 - Gothik",
+        price: "Rp 450.000/bundle",
+        description: "Elegan, kokoh, anti bocor, bergaya klasik.",
+        features: [
+          "Model irregular bergaya Eropa",
+          "Satu-satunya asphalt shingles buatan anak bangsa",
+          "Dirancang khusus untuk pasar Indonesia",
+          "Cocok untuk berbagai jenis bangunan",
+          "mempercepat pemasangan, cukup cabut plastik HDPE",
+          "Tahan bocor dan cuaca ekstrem",
+          "Lifetime warranty untuk material",
+          "Kualitas produksi terjamin",
+          "Ideal untuk rumah bergaya klasik/eropa",
+          "Bukti kualitas dan kepercayaan pasar"
+        ],
+        specs: {
+          Garansi: "20 Tahun",
+          Bundle: "21 Lembar",
+          Dimensi: "1000 mm x 333 mm / Lembar",
+          Area: "3m2 / Bundle",
+          berat: " 8.50 Kg / m2",
+          Tebal: "3mm"
+        },
+        colors: [
+          { name: "Black", hex: "#000000" },
+          { name: "Red", hex: "#FF0000" },
+          { name: "Green", hex: "#00FF00" },
+          { name: "Gold", hex: "#FFD700" }
+        ]
+      },
+      { 
+        src: "/images/CT6-Hexagonal.png", 
+        label: "CT6 - Hexagonal",
+        price: "Rp 450.000/bundle",
+        description: "Elegan, ringan, anti bocor, bergaya unik.",
+        features: [
+          "Model hexagonal bergaya Eropa.",
+          "Satu-satunya asphalt shingles buatan anak bangsa",
+          "Dibuat khusus untuk pasar Indonesia",
+          "Cocok untuk berbagai jenis bangunan",
+          "Pemasangan cepat, tinggal cabut plastik HDPE",
+          "Tahan air dan cuaca ekstrem",
+          "Perlindungan jangka panjang (lifetime warranty)",
+          "Kualitas kontrol produksi terpercaya",
+          "Ideal untuk rumah bergaya classic European",
+          "tTerbukti andal dan diterima pasar Indonesia"
+        ],
+        specs: {
+          Garansi: "20 Tahun",
+          Bundle: "21 Lembar",
+          Dimensi: "1000 mm x 333 mm / Lembar",
+          Area: "3m2 / Bundle",
+          berat: " 8.50 Kg / m2",
+          Tebal: "3mm"
+        },
+        colors: [
+          { name: "Black", hex: "#000000" },
+          { name: "Red", hex: "#FF0000" },
+          { name: "Green", hex: "#00FF00" },
+          { name: "Gold", hex: "#FFD700" }
+        ]
+      }
+    ]
+  },
 ]
 
 export default function HomeSection() {
