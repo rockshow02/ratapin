@@ -196,205 +196,179 @@ const imageData = [
   },
   { 
     title: "Tamco Shingles", 
-    description: "Tamco Shingles, atap elegan, tahan lama, dengan variasi warna menarik.", 
-    src: "/images/Tamco-Shingles.png",
+    description: "Victory Shingles: Tamco Shingles ringan, tahan lama, anti bocor, elegan, dan mudah dipasang.", 
+    src: "/images/tamcoHeritage-standard.png",
     gallery: [
       { 
-        src: "/images/Tamco-Shingles.png", 
-        label: "Classic",
-        price: "Rp 135.000/m²",
-        description: "Seri klasik dengan desain timeless",
+        src: "/images/tamcoHeritage-standard.png", 
+        label: "Tamco Heritage - Rectangular",
+        price: "Rp 1.050.280/bundle",
+        description: "Tamco Heritage Rectangular kuat, elegan, tahan bocor, ringan",
         features: [
-          "Elegan dan premium",
-          "Variasi warna lengkap",
-          "Tahan UV dan panas",
-          "Instalasi profesional"
+          "Produk premium made in USA, kualitas untuk proyek profesional",
+          "Jenis genteng aspal / atap bitumen / asphalt shingles",
+          "Desain arsitektural dengan sistem laminated double layer",
+          "Tahan semua iklim, termasuk tropis & kelembaban tinggi di Indonesia",
+          "Bobot sangat ringan, tidak membebani struktur bangunan",
+          "Aman untuk daerah rawan gempa & bencana",
+          "Double layer system membuat atap lebih kuat & awet",
+          "100% waterproofing, mencegah kebocoran",
+          "Tahan usia & kerusakan cuaca, lebih durable dibanding atap konvensional",
+          "Pilihan ideal untuk proyek yang membutuhkan hasil maksimal"
         ],
         specs: {
-          material: "Bitumen premium",
-          ketebalan: "3.2mm",
-          berat: "13 kg/m²",
-          garansi: "30 tahun"
+          Garansi: "30 Tahun",
+          Material: "Algae Relief",
+          Dimensi: "1000 mm x 334 mm / Lembar",
+          Area: "3.1m2 / Bundle",
+          berat: " 10 Kg / m2",
+          WindResistance: " 96.5 Km / jam",
+          Tebal: "3mm"
         },
         colors: [
-          { name: "Weathered Wood", hex: "#8B7355" },
-          { name: "Driftwood", hex: "#AF8A5A" },
-          { name: "Pewter Grey", hex: "#91989F" },
-          { name: "Charcoal", hex: "#36454F" }
+          { name: "Rustic Black", hex: "#1B1A16" },
+          { name: "Rustic Redwood", hex: "#A45A52" },
+          { name: "Rustic Cedar", hex: "#A45A52" },
+          { name: "Thunderstorm Grey", hex: "#656C71" }
         ]
       },
       { 
-        src: "/images/tamco-type-1.png", 
-        label: "Heritage",
-        price: "Rp 145.000/m²",
-        description: "Desain heritage dengan tekstur premium",
+        src: "/images/TamcoElitGlassSela.png", 
+        label: "Tamco Elite - Glass Seal",
+        price: "Rp. 801.350/bundle",
+        description: "Tamko Elite Glass-Seal ringan, kuat, tahan bocor",
         features: [
-          "Tekstur 3D",
-          "Ultra premium",
-          "Garansi 35 tahun",
-          "Limited edition"
+          "Garansi material 30 tahun untuk perlindungan jangka panjang",
+          "Presisi ukuran tinggi toleransi kurang dari 1 mm",
+          "NAT atap rapi & lurus tanpa pergeseran garis",
+          "Tersedia 5 pilihan warna batuan berkualitas premium",
+          "Coating batuan dibakar 2000°C untuk daya tahan maksimal",
+          "Dilengkapi algae relief mencegah lumut & jamur",
+          "Waterproofing optimal berkat lapisan batuan coating",
+          "Batuan warna memantulkan UV, membuat rumah lebih sejuk",
+          "Desain classic American style memberi tampilan estetik elegan",
+          "TCocok untuk berbagai jenis bangunan yang mengutamakan keindahan arsitektur"
         ],
         specs: {
-          material: "Bitumen special",
-          ketebalan: "3.5mm",
-          berat: "14 kg/m²",
-          garansi: "35 tahun"
+          Garansi: "20 Tahun",
+          Dimensi: "1000 mm x 320 mm / Lembar",
+          Area: "3 m2 / Bundle",
+          berat: " 8.50 Kg / m2",
+          Bundle: "22 Lembar",
+          Tebal: "3mm"
         },
         colors: [
-          { name: "Aged Copper", hex: "#B87333" },
-          { name: "Slate", hex: "#708090" },
-          { name: "Colonial Slate", hex: "#6A7F8C" }
+          { name: "Rustic Black", hex: "#1B1A16" },
+          { name: "Rustic Redwood", hex: "#A45A52" },
+          { name: "Weahered Wood", hex: "#B19C86" },
+          { name: "Antique Slate", hex: "#455C59" }
         ]
       },
-      { 
-        src: "/images/tamco-type-2.png", 
-        label: "Landmark",
-        price: "Rp 150.000/m²",
-        description: "Seri Landmark untuk proyek prestisius",
-        features: [
-          "Top of the line",
-          "Architectural grade",
-          "Garansi seumur hidup",
-          "Best seller"
-        ],
-        specs: {
-          material: "Bitumen architectural",
-          ketebalan: "4mm",
-          berat: "15 kg/m²",
-          garansi: "Lifetime"
-        },
-        colors: [
-          { name: "Georgetown Grey", hex: "#6C7A89" },
-          { name: "Hunter Green", hex: "#355E3B" },
-          { name: "Burnt Sienna", hex: "#8B4513" },
-          { name: "Weatherwood", hex: "#9B8B7E" }
-        ]
-      },
-      { 
-        src: "/images/tamco-type-3.png", 
-        label: "Duration",
-        price: "Rp 140.000/m²",
-        description: "Seri Duration dengan teknologi SureNail",
-        features: [
-          "Teknologi SureNail",
-          "Wind resistant",
-          "Garansi 32 tahun",
-          "Energy efficient"
-        ],
-        specs: {
-          material: "Bitumen advanced",
-          ketebalan: "3.3mm",
-          berat: "13.5 kg/m²",
-          garansi: "32 tahun"
-        },
-        colors: [
-          { name: "Estate Grey", hex: "#878E88" },
-          { name: "Driftwood", hex: "#9B8B7E" },
-          { name: "Teak", hex: "#AB7A4D" }
-        ]
-      }
     ]
   },
   { 
     title: "Genteng Metal", 
-    description: "Genteng metal kuat, ringan, tahan lama, dan mudah perawatannya.", 
+    description: "Genteng Metal: ringan, kuat, anti karat, tahan lama, pemasangan cepat", 
     src: "/images/Genteng-Metal.png",
     gallery: [
       { 
         src: "/images/Genteng-Metal.png", 
-        label: "Pasir",
-        price: "Rp 85.000/lembar",
-        description: "Metal berpasir untuk tampilan natural",
+        label: "Genteng Multi Stone - Warna",
+        price: "Rp 150.000/bundle",
+        description: "Genteng metal ringan, kuat, anti karat, tahan lama",
         features: [
-          "Anti bocor 100%",
-          "Tahan lama 15+ tahun",
-          "Berbagai pilihan warna",
-          "Perawatan minimal"
+          "Menggunakan bahan dasar Colorbond, warna tahan lama dan tidak mudah pudar",
+          "Dilengkapi teknologi cat terbaru, mencegah pengelupasan warna hingga puluhan tahun (TCT 0,40 mm)",
+          "Kuat dan anti karat, terbuat dari baja berlapis Zinc & Aluminium, tahan suhu ekstrem",
+          "Desain profil bergelombang dinamis, memberikan tampilan atap lebih elegan",
+          "Pilihan warna premium, menjadikan atap sebagai elemen estetika utama bangunan."
         ],
         specs: {
-          material: "Metal berlapis pasir",
-          ketebalan: "0.3mm",
-          berat: "7 kg/m²",
-          dimensi: "78 x 80 cm"
+          Ukuran: "1 M x 770 mm",
+          Ketebalan: "0.40 mm"
+          
         },
         colors: [
-          { name: "Merah Maroon", hex: "#800000" },
-          { name: "Coklat", hex: "#8B4513" },
-          { name: "Hijau", hex: "#2D5016" },
-          { name: "Biru", hex: "#1F4788" },
-          { name: "Hitam", hex: "#2C2C2C" }
+          { name: "Bart Red", hex: "#2B303E" },
+          { name: "Beach Blue", hex: "#5F9CA2" },
+          { name: "Pine Green", hex: "#01796F" }
         ]
       },
       { 
-        src: "/images/metal-type-1.png", 
-        label: "Rainbow",
-        price: "Rp 95.000/lembar",
-        description: "Metal rainbow dengan warna cerah",
+        src: "/images/sakuraStone.png", 
+        label: "Sakura Stone - Batuan",
+        price: "Rp. 77.000/bundle",
+        description: "Tamko Elite Glass-Seal ringan, kuat, tahan bocor",
         features: [
-          "Warna cerah tahan lama",
-          "Anti kusam",
-          "Garansi 20 tahun",
-          "Pemasangan mudah"
+          "Lapisan dan struktur reng membantu meredam panas dan suara hujan",
+          "Cat teknologi tinggi mencegah perubahan warna, karat, dan lumut",
+          "Pemasangan mudah karena bobot genteng sangat ringan",
+          "Cukup diposisikan tepat dan dikencangkan dengan skrup agar aman dari angin",
+          "Ringan namun kuat, bahkan lebih tahan gempa terutama pada genteng metal pasir"
         ],
         specs: {
-          material: "Metal galvalum",
-          ketebalan: "0.35mm",
-          berat: "7.5 kg/m²",
-          dimensi: "78 x 80 cm"
+          Ukuran: "1 M x 770 mm",
+          Ketebalan: "0.40 mm"
         },
         colors: [
-          { name: "Merah Delima", hex: "#E30B5C" },
-          { name: "Biru Laut", hex: "#0077BE" },
-          { name: "Hijau Daun", hex: "#228B22" },
-          { name: "Coklat Tua", hex: "#654321" }
+          { name: "Diamond Black", hex: "#2B303E" },
+          { name: "Jade Green", hex: "#00A86B" },
+          { name: "Pretty Maroon", hex: "#800000" },
+          { name: "Stone Green", hex: "#595F57" }
         ]
       },
       { 
-        src: "/images/metal-type-2.png", 
-        label: "Multi Roof",
-        price: "Rp 88.000/lembar",
-        description: "Multi roof untuk berbagai kebutuhan",
+        src: "/images/NokPutriMultStone.png", 
+        label: "Nok Putri Multi Stone - Batuan",
+        price: "Rp. 50.000/bundle",
+        description: "Nok Putri Multi Stone elegan, kokoh, tahan lama",
         features: [
-          "Desain versatile",
-          "Ekonomis",
-          "Tahan karat",
-          "Stock ready"
+          "Terbuat dari material terbaik, dibakar hingga 1.100°C",
+          "Kuat, tidak retak, tidak bocor, tahan cuaca ekstrem",
+          "Meredam panas, tidak menimbulkan suara bising",
+          "Glazur permanen, tidak pudar dan tidak luntur",
+          "Tidak mudah terbakar, anti korosi, anti karat"
         ],
         specs: {
-          material: "Metal coating",
-          ketebalan: "0.3mm",
-          berat: "7 kg/m²",
-          dimensi: "Custom"
+          Panjang: "109 cm",
+          Lebar: "12 cm",
+          Tinggi: "8 cm",
+          Ketebalan: "0.25 mm",
         },
         colors: [
-          { name: "Silver", hex: "#C0C0C0" },
-          { name: "Cream", hex: "#FFFDD0" },
-          { name: "Abu-abu", hex: "#808080" }
+          { name: "Red", hex: "#C62828" },
+          { name: "Brown", hex: "#905E3C" },
+          { name: "Green", hex: "#01796F" },
+          { name: "Blue", hex: "#0F52BA" },
+          { name: "Black", hex: "#000000" },
+          { name: "Terracotta Red", hex: "#7C0A02" },
+          { name: "Deep Maroon", hex: "#5A1F1F" },
+          { name: "Slate Gray", hex: "#2F2F2F" },
         ]
       },
       { 
-        src: "/images/metal-type-3.png", 
-        label: "Spandek",
-        price: "Rp 75.000/lembar",
-        description: "Spandek untuk atap industrial",
+        src: "/images/NokSms.png", 
+        label: "Nok S MS - Batuan",
+        price: "Rp. 60.000/bundle",
+        description: "Nok S MS elegan, kokoh, tahan lama",
         features: [
-          "Untuk gudang/pabrik",
-          "Harga ekonomis",
-          "Instalasi cepat",
-          "Multi ukuran"
+          "Terbuat dari material terbaik, dibakar hingga 1.100°C",
+          "Kuat, tidak retak, tidak bocor, tahan cuaca ekstrem",
+          "Meredam panas, tidak menimbulkan suara bising",
+          "Glazur permanen, tidak pudar dan tidak luntur",
+          "Tidak mudah terbakar, anti korosi, anti karat"
         ],
         specs: {
-          material: "Metal galvanis",
-          ketebalan: "0.25mm - 0.4mm",
-          berat: "5-8 kg/m²",
-          dimensi: "Custom size"
+          Panjang: "101 cm",
+          Lebar: "8 cm",
+          Tinggi: "10 cm",
+          Ketebalan: "0.40 mm",
         },
         colors: [
-          { name: "Natural Galvanis", hex: "#B8B8B8" },
-          { name: "Blue", hex: "#0047AB" },
-          { name: "Red", hex: "#DC143C" }
+          { name: "Textured Black", hex: "#1C1C1C" },
+          { name: "Rust Red", hex: "#8B3A3A" }
         ]
-      }
+      },
     ]
   },
   { 
