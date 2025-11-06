@@ -5,101 +5,197 @@ import Image from 'next/image'
 
 const imageData = [
   { 
-    title: "MAXXI Shingles", 
-    description: "Atap MAXXI Shingles heksagonal, tahan lama, estetis, dan fungsional.", 
-    src: "/images/MAXXI-Shingles.png",
+    title: "Membrane & Underlayer", 
+    description: "Membrane & Underlayer melindungi atap dari bocor, panas, dan lembap", 
+    src: "/images/Membraneunder.png",
     gallery: [
       { 
-        src: "/images/MAXXI-Shingles.png", 
-        label: "Utama",
-        price: "Rp 125.000/m²",
-        description: "Atap MAXXI Shingles heksagonal standar dengan kualitas premium",
+        src: "/images/Tourching.png", 
+        label: "Tourching",
+        price: "Rp 700.000",
         features: [
-          "Desain heksagonal modern",
-          "Tahan cuaca ekstrem",
-          "Garansi 25 tahun",
-          "Mudah dipasang"
+          "Melindungi alas atap GRC atau multiplek dari kelembapan dan kebocoran",
+          "Memberikan proteksi waterproofing maksimal untuk atap bitumen dan genteng aspal",
+          "Membrane bakar (Torching) dipasang dengan metode pembakaran pada atap bersudut di bawah 15°",
+          "Underlayer (Underlayment) mudah dipasang tanpa memerlukan peralatan khusus",
+          "Menambah daya tahan atap terhadap air dan cuaca ekstrem, sehingga hasil pemasangan lebih awet dan aman"
         ],
         specs: {
-          material: "Bitumen berkualitas tinggi",
-          ketebalan: "3mm",
-          berat: "12 kg/m²",
-          warna: "Natural Grey"
-        },
-        colors: [
-          { name: "Natural Grey", hex: "#8B8B8B" },
-          { name: "Charcoal Black", hex: "#36454F" },
-          { name: "Desert Tan", hex: "#D2B48C" }
-        ]
+          Ukuran: "1m x 10m",
+          Ketebalan: "3mm"
+        }
       },
       { 
-        src: "/images/maxxi-type-1.png", 
-        label: "Tipe Hitam",
-        price: "Rp 130.000/m²",
-        description: "Varian hitam elegan dengan daya tahan maksimal",
+        src: "/images/TourchingSanded.png", 
+        label: "Tourching Sanded",
+        price: "Rp 750.000",
         features: [
-          "Warna hitam premium",
-          "Anti UV maksimal",
-          "Garansi 30 tahun",
-          "Tampilan mewah"
+          "Melindungi alas atap GRC atau multiplek dari kelembapan dan kebocoran",
+          "Memberikan proteksi waterproofing maksimal untuk atap bitumen dan genteng aspal",
+          "Membrane bakar (Torching) dipasang dengan metode pembakaran pada atap bersudut di bawah 15°",
+          "Underlayer (Underlayment) mudah dipasang tanpa memerlukan peralatan khusus",
+          "Menambah daya tahan atap terhadap air dan cuaca ekstrem, sehingga hasil pemasangan lebih awet dan aman"
         ],
         specs: {
-          material: "Bitumen premium",
-          ketebalan: "3.2mm",
-          berat: "12.5 kg/m²",
-          warna: "Midnight Black"
-        },
-        colors: [
-          { name: "Midnight Black", hex: "#000000" },
-          { name: "Onyx Black", hex: "#353839" }
-        ]
+          Ukuran: "1m x 10m",
+          Ketebalan: "3mm"
+        }
       },
       { 
-        src: "/images/maxxi-type-2.png", 
-        label: "Tipe Coklat",
-        price: "Rp 128.000/m²",
-        description: "Warna coklat natural yang menyatu dengan alam",
+        src: "/images/SAD10.png", 
+        label: "S-AD 10",
+        price: "Rp 600.000",
         features: [
-          "Warna coklat natural",
-          "Cocok untuk villa",
-          "Garansi 28 tahun",
-          "Estetika klasik"
+          "Melindungi alas atap GRC atau multiplek dari kelembapan dan kebocoran",
+          "Memberikan proteksi waterproofing maksimal untuk atap bitumen dan genteng aspal",
+          "Membrane bakar (Torching) dipasang dengan metode pembakaran pada atap bersudut di bawah 15°",
+          "Underlayer (Underlayment) mudah dipasang tanpa memerlukan peralatan khusus",
+          "Menambah daya tahan atap terhadap air dan cuaca ekstrem, sehingga hasil pemasangan lebih awet dan aman"
         ],
         specs: {
-          material: "Bitumen grade A",
-          ketebalan: "3mm",
-          berat: "12 kg/m²",
-          warna: "Natural Brown"
-        },
-        colors: [
-          { name: "Natural Brown", hex: "#8B4513" },
-          { name: "Mahogany", hex: "#C04000" },
-          { name: "Chestnut", hex: "#954535" }
-        ]
+          Ukuran: "1m x 10m",
+          Ketebalan: "1mm"
+        }
       },
       { 
-        src: "/images/maxxi-type-3.png", 
-        label: "Tipe Abu",
-        price: "Rp 125.000/m²",
-        description: "Abu-abu modern untuk tampilan kontemporer",
+        src: "/images/SAD20.png", 
+        label: "S-AD 20",
+        price: "Rp 1.200.000",
         features: [
-          "Warna abu modern",
-          "Minimalis elegan",
-          "Garansi 25 tahun",
-          "Mudah dikombinasi"
+          "Melindungi alas atap GRC atau multiplek dari kelembapan dan kebocoran",
+          "Memberikan proteksi waterproofing maksimal untuk atap bitumen dan genteng aspal",
+          "Membrane bakar (Torching) dipasang dengan metode pembakaran pada atap bersudut di bawah 15°",
+          "Underlayer (Underlayment) mudah dipasang tanpa memerlukan peralatan khusus",
+          "Menambah daya tahan atap terhadap air dan cuaca ekstrem, sehingga hasil pemasangan lebih awet dan aman"
         ],
         specs: {
-          material: "Bitumen berkualitas",
-          ketebalan: "3mm",
-          berat: "12 kg/m²",
-          warna: "Graphite Grey"
-        },
-        colors: [
-          { name: "Graphite Grey", hex: "#696969" },
-          { name: "Silver Grey", hex: "#C0C0C0" },
-          { name: "Slate Grey", hex: "#708090" }
-        ]
-      }
+          Ukuran: "1m x 20m",
+          Ketebalan: "1mm"
+        }
+      },
+    ]
+  },
+  { 
+    title: "Baud", 
+    description: "Baud berkualitas tinggi untuk sambungan kokoh, tahan lama, dan presisi.", 
+    src: "/images/Baud.png",
+    gallery: [
+      { 
+        src: "/images/BaudHilti.png", 
+        label: "Dynabolt",
+        price: "Rp 8.500",
+        features: [
+          "Cocok untuk rangka baja ringan, baik pada bagian reng maupun trus",
+          "Dapat dicabut dan dipasang berulang kali tanpa menjadi tumpul",
+          "Mutu baut tinggi, mampu menembus baja CNP hingga ketebalan 1.8mm",
+          "Self Drilling Screw (Baut Roofing) berfungsi mengebor dan mengencangkan tanpa lubang terlebih dahulu",
+          "Desain kepala berflens memberikan kekuatan ekstra seperti penggunaan washer, dengan material berkualitas dari besi hingga baja hitam"
+        ],
+        specs: {
+          Ukuran: "10 x 55"
+        }
+      },
+      { 
+        src: "/images/ScrewRengTaso.png", 
+        label: "Screw reng",
+        price: "Rp 500",
+        features: [
+          "Cocok untuk rangka baja ringan, baik pada bagian reng maupun trus",
+          "Dapat dicabut dan dipasang berulang kali tanpa menjadi tumpul",
+          "Mutu baut tinggi, mampu menembus baja CNP hingga ketebalan 1.8mm",
+          "Self Drilling Screw (Baut Roofing) berfungsi mengebor dan mengencangkan tanpa lubang terlebih dahulu",
+          "Desain kepala berflens memberikan kekuatan ekstra seperti penggunaan washer, dengan material berkualitas dari besi hingga baja hitam"
+        ],
+        specs: {
+          Ukuran: "10 - 16 x 16"
+        }
+      },
+      { 
+        src: "/images/ScrewTruss.png", 
+        label: "Screw Truss",
+        price: "Rp 700",
+        features: [
+          "Cocok untuk rangka baja ringan, baik pada bagian reng maupun trus",
+          "Dapat dicabut dan dipasang berulang kali tanpa menjadi tumpul",
+          "Mutu baut tinggi, mampu menembus baja CNP hingga ketebalan 1.8mm",
+          "Self Drilling Screw (Baut Roofing) berfungsi mengebor dan mengencangkan tanpa lubang terlebih dahulu",
+          "Desain kepala berflens memberikan kekuatan ekstra seperti penggunaan washer, dengan material berkualitas dari besi hingga baja hitam"
+        ],
+        specs: {
+          Ukuran: "12 - 14 x 20"
+        }
+      },
+      { 
+        src: "/images/ScrewRoofingWaterhead.png", 
+        label: "Screw Roofing Waterhead",
+        price: "Rp 700",
+        features: [
+          "Cocok untuk rangka baja ringan, baik pada bagian reng maupun trus",
+          "Dapat dicabut dan dipasang berulang kali tanpa menjadi tumpul",
+          "Mutu baut tinggi, mampu menembus baja CNP hingga ketebalan 1.8mm",
+          "Self Drilling Screw (Baut Roofing) berfungsi mengebor dan mengencangkan tanpa lubang terlebih dahulu",
+          "Desain kepala berflens memberikan kekuatan ekstra seperti penggunaan washer, dengan material berkualitas dari besi hingga baja hitam"
+        ],
+        specs: {
+          Ukuran: "10 - 24 x 32"
+        }
+      },
+      { 
+        src: "/images/ScrewRoofingFlangehead.png", 
+        label: "Screw Roofing Flangehead",
+        price: "Rp 700",
+        features: [
+          "Cocok untuk rangka baja ringan, baik pada bagian reng maupun trus",
+          "Dapat dicabut dan dipasang berulang kali tanpa menjadi tumpul",
+          "Mutu baut tinggi, mampu menembus baja CNP hingga ketebalan 1.8mm",
+          "Self Drilling Screw (Baut Roofing) berfungsi mengebor dan mengencangkan tanpa lubang terlebih dahulu",
+          "Desain kepala berflens memberikan kekuatan ekstra seperti penggunaan washer, dengan material berkualitas dari besi hingga baja hitam"
+        ],
+        specs: {
+          Ukuran: "12 - 24 x 45"
+        }
+      },
+    ]
+  },
+  { 
+    title: "Gipsum", 
+    description: "Gipsum berkualitas tinggi untuk dinding dan plafon halus tahan lama", 
+    src: "/images/Gipsum.png",
+    gallery: [
+      { 
+        src: "/images/GipsumJayaBoard.png", 
+        label: "Jaya Board",
+        price: "Rp 75.000",
+        features: [
+          "Jayaboard SHEETROCK® adalah papan gipsum pertama dan terbaik di Indonesia",
+          "Teknologi SHEETROCK® menjadikan papan lebih tahan lendut, ringan, dan berkualitas konsisten",
+          "Jayaboard 9mm cocok untuk pelapis dinding dan plafon dengan daya tahan serta stabilitas tinggi",
+          "Ekonomis dan mudah dipasang, hasil akhir rata dan presisi dengan teknologi anti lendut",
+          "E’BOARD® ideal untuk plafon dan partisi dinding hunian, memberikan tampilan kuat dan rapi"
+        ],
+        specs: {
+          Ukuran: "2400mm x 1200mm",
+          Tebal: "9mm",
+          Berat: "14.7",
+        }
+      },
+      { 
+        src: "/images/GipsumEboard.png", 
+        label: "Elephant Board",
+        price: "Rp 65.000",
+        features: [
+          "Jayaboard SHEETROCK® adalah papan gipsum pertama dan terbaik di Indonesia",
+          "Teknologi SHEETROCK® menjadikan papan lebih tahan lendut, ringan, dan berkualitas konsisten",
+          "Jayaboard 9mm cocok untuk pelapis dinding dan plafon dengan daya tahan serta stabilitas tinggi",
+          "Ekonomis dan mudah dipasang, hasil akhir rata dan presisi dengan teknologi anti lendut",
+          "E’BOARD® ideal untuk plafon dan partisi dinding hunian, memberikan tampilan kuat dan rapi"
+        ],
+        specs: {
+          Ukuran: "2400mm x 1200mm",
+          Tebal: "9mm",
+          Berat: "14.7",
+        }
+      },
     ]
   },
   { 
@@ -108,90 +204,101 @@ const imageData = [
     src: "/images/Baja-ringan.png",
     gallery: [
       { 
-        src: "/images/Baja-ringan.png", 
-        label: "Rangka",
-        price: "Rp 45.000/meter",
-        description: "Rangka baja ringan standar untuk konstruksi atap",
+        src: "/images/TasoC75.png", 
+        label: "Taso C75.65",
+        price: "Rp 125.000",
         features: [
-          "Anti karat dan korosi",
-          "Ringan namun kuat",
-          "Ramah lingkungan",
-          "Pemasangan cepat"
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
         ],
         specs: {
-          material: "Galvanis berkualitas",
-          ketebalan: "0.75mm",
-          berat: "Sangat ringan",
-          finishing: "Galvanis"
-        },
-        colors: [
-          { name: "Silver Metallic", hex: "#C0C0C0" }
-        ]
+          Panjang: "6m",
+          Tebal: "0.65mm"
+        }
       },
       { 
-        src: "/images/baja-type-1.png", 
-        label: "C75",
-        price: "Rp 48.000/meter",
-        description: "Profil C75 untuk rangka utama dengan kekuatan ekstra",
+        src: "/images/TasoC752.png", 
+        label: "Taso C75.75",
+        price: "Rp 135.000",
         features: [
-          "Kekuatan maksimal",
-          "Untuk bentang lebar",
-          "Presisi tinggi",
-          "Standar internasional"
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
         ],
         specs: {
-          material: "Galvanis premium",
-          ketebalan: "1mm",
-          berat: "Medium",
-          finishing: "Zincalume"
-        },
-        colors: [
-          { name: "Zincalume Silver", hex: "#D3D3D3" }
-        ]
+          Panjang: "6m",
+          Tebal: "0.75mm"
+        }
       },
       { 
-        src: "/images/baja-type-2.png", 
-        label: "Reng",
-        price: "Rp 38.000/meter",
-        description: "Reng baja ringan untuk pemasangan genteng",
+        src: "/images/TasoC80.png", 
+        label: "Taso C75.80",
+        price: "Rp 150.000",
         features: [
-          "Khusus untuk reng",
-          "Ekonomis",
-          "Tahan lama",
-          "Mudah dipasang"
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
         ],
         specs: {
-          material: "Galvanis",
-          ketebalan: "0.65mm",
-          berat: "Ringan",
-          finishing: "Galvanis"
-        },
-        colors: [
-          { name: "Galvanis Natural", hex: "#B0B0B0" }
-        ]
+          Panjang: "6m",
+          Tebal: "0.80mm"
+        }
       },
       { 
-        src: "/images/baja-type-3.png", 
-        label: "Hollow",
-        price: "Rp 52.000/meter",
-        description: "Hollow baja untuk konstruksi khusus",
+        src: "/images/TasoC100.png", 
+        label: "Taso C75.100",
+        price: "Rp 187.000",
         features: [
-          "Multi fungsi",
-          "Extra strong",
-          "Tahan beban berat",
-          "Premium quality"
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
         ],
         specs: {
-          material: "Steel hollow",
-          ketebalan: "1.2mm",
-          berat: "Heavy duty",
-          finishing: "Powder coating"
-        },
-        colors: [
-          { name: "Black Matte", hex: "#2C2C2C" },
-          { name: "White", hex: "#FFFFFF" }
-        ]
-      }
+          Panjang: "6m",
+          Tebal: "1mm"
+        }
+      },
+      { 
+        src: "/images/TasoRengMXR32.png", 
+        label: "Taso Reng MX R 32.45",
+        price: "Rp 65.000",
+        features: [
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
+        ],
+        specs: {
+          Panjang: "6m",
+          Tebal: "0.45mm"
+        }
+      },
+      { 
+        src: "/images/TasoReng40.png", 
+        label: "Taso Reng 40.45",
+        price: "Rp 90.000",
+        features: [
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
+        ],
+        specs: {
+          Panjang: "6m",
+          Tebal: "0.45mm"
+        }
+      },
     ]
   },
   { 
@@ -814,10 +921,11 @@ export default function HomeSection() {
   }
 
   const startAutoplay = () => {
-    autoplayRef.current = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % imageData.length)
-    }, 4000)
-    setIsPlaying(true)
+    if (!autoplayRef.current) {
+      autoplayRef.current = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % imageData.length)
+      }, 4000)
+    }
   }
 
   const stopAutoplay = () => {
@@ -825,20 +933,23 @@ export default function HomeSection() {
       clearInterval(autoplayRef.current)
       autoplayRef.current = null
     }
-    setIsPlaying(false)
   }
 
   const toggleAutoplay = () => {
     if (isPlaying) {
       stopAutoplay()
+      setIsPlaying(false)
     } else {
       startAutoplay()
+      setIsPlaying(true)
     }
   }
 
   const handleUserInteraction = () => {
     stopAutoplay()
+    setIsPlaying(false)
   }
+
 
   useEffect(() => {
     startAutoplay()
