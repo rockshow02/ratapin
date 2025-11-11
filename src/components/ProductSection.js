@@ -8,42 +8,6 @@ export default function ProductSection() {
 
   const products = [
     {
-      id: 1,
-      name: 'Membrane & Underlayer',
-      category: 'accessories',
-      image: '/images/Membraneunder.png',
-      description: 'Membrane & Underlayer melindungi atap dari bocor, panas, dan lembap',
-      features: ['Waterproofing maksimal', 'Tahan cuaca ekstrem', 'Mudah dipasang'],
-      variants: 4
-    },
-    {
-      id: 2,
-      name: 'Baud',
-      category: 'accessories',
-      image: '/images/Baud.png',
-      description: 'Baud berkualitas tinggi untuk sambungan kokoh, tahan lama, dan presisi',
-      features: ['Mutu tinggi', 'Tahan karat', 'Berbagai ukuran'],
-      variants: 5
-    },
-    {
-      id: 3,
-      name: 'Gipsum',
-      category: 'interior',
-      image: '/images/Gipsum.png',
-      description: 'Gipsum berkualitas tinggi untuk dinding dan plafon halus tahan lama',
-      features: ['Anti lendut', 'Ringan & kuat', 'Hasil rata & presisi'],
-      variants: 2
-    },
-    {
-      id: 4,
-      name: 'Baja Ringan',
-      category: 'structure',
-      image: '/images/Baja-ringan.png',
-      description: 'Baja ringan kuat, tahan lama, efisien, dan mudah dipasang',
-      features: ['Anti karat & korosi', 'Ringan namun kuat', 'Pemasangan cepat'],
-      variants: 6
-    },
-    {
       id: 5,
       name: 'Tamco Shingles',
       category: 'shingles',
@@ -87,7 +51,44 @@ export default function ProductSection() {
       description: 'CTI Shingles: Ringan, tahan lama, estetis, anti bocor, fleksibel',
       features: ['Produk lokal Indonesia', 'Lifetime warranty', 'Value tinggi'],
       variants: 3
-    }
+    },
+    {
+      id: 1,
+      name: 'Membrane & Underlayer',
+      category: 'accessories',
+      image: '/images/Membraneunder.png',
+      description: 'Membrane & Underlayer melindungi atap dari bocor, panas, dan lembap',
+      features: ['Waterproofing maksimal', 'Tahan cuaca ekstrem', 'Mudah dipasang'],
+      variants: 4
+    },
+    {
+      id: 2,
+      name: 'Baud',
+      category: 'accessories',
+      image: '/images/Baud.png',
+      description: 'Baud berkualitas tinggi untuk sambungan kokoh, tahan lama, dan presisi',
+      features: ['Mutu tinggi', 'Tahan karat', 'Berbagai ukuran'],
+      variants: 5
+    },
+    {
+      id: 3,
+      name: 'Gipsum',
+      category: 'interior',
+      image: '/images/Gipsum.png',
+      description: 'Gipsum berkualitas tinggi untuk dinding dan plafon halus tahan lama',
+      features: ['Anti lendut', 'Ringan & kuat', 'Hasil rata & presisi'],
+      variants: 2
+    },
+    {
+      id: 4,
+      name: 'Baja Ringan',
+      category: 'structure',
+      image: '/images/Baja-ringan.png',
+      description: 'Baja ringan kuat, tahan lama, efisien, dan mudah dipasang',
+      features: ['Anti karat & korosi', 'Ringan namun kuat', 'Pemasangan cepat'],
+      variants: 6
+    },
+    
   ]
 
   const displayedProducts = showAll ? products : products.slice(0, 6)
@@ -114,7 +115,7 @@ export default function ProductSection() {
                 <div className="product-badge">{product.variants} Varian</div>
                 <div className="product-overlay">
                   <a 
-                    href={`https://wa.me/6281234567890?text=Halo%20Ratapin,%20saya%20tertarik%20dengan%20produk%20${encodeURIComponent(product.name)}`}
+                    href={`https://wa.me/628131322833?text=Halo%20Ratapin,%20saya%20tertarik%20dengan%20produk%20${encodeURIComponent(product.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="product-cta"
@@ -138,7 +139,7 @@ export default function ProductSection() {
                 </ul>
                 <div className="product-footer">
                   <a 
-                    href={`https://wa.me/6281234567890?text=Halo%20Ratapin,%20saya%20ingin%20menanyakan%20detail%20tentang%20${encodeURIComponent(product.name)}`}
+                    href={`https://wa.me/628131322833?text=Halo%20Ratapin,%20saya%20ingin%20menanyakan%20detail%20tentang%20${encodeURIComponent(product.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="product-contact"
@@ -186,7 +187,7 @@ export default function ProductSection() {
           <h3>Butuh Konsultasi untuk Proyek Anda?</h3>
           <p>Hubungi kami untuk konsultasi gratis dan penawaran khusus</p>
           <a 
-            href="https://wa.me/6281234567890?text=Halo%20Ratapin,%20saya%20ingin%20konsultasi%20tentang%20produk%20atap%20dan%20bangunan"
+            href="https://wa.me/628131322833?text=Halo%20Ratapin,%20saya%20ingin%20konsultasi%20tentang%20produk%20atap%20dan%20bangunan"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button"

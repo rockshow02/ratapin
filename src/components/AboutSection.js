@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function AboutSection() {
   return (
@@ -20,21 +21,24 @@ export default function AboutSection() {
                 
                 <div className="showcase-logo">
                   <div className="showcase-logo">
-                  <img 
-                    src="/images/logo-42a7f0c9.png" 
-                    alt="Ratapin Logo" 
-                    className="logo-image"
-                  />
-                </div>
+                    <Image 
+                      src="/images/logo-42a7f0c9.png" 
+                      alt="Ratapin Logo" 
+                      className="logo-image"
+                      width={200}   // Sesuaikan dengan ukuran logo Anda
+                      height={200}  // Sesuaikan dengan ukuran logo Anda
+                      priority      // Opsional: untuk gambar penting di atas fold
+                    />
+                  </div>
                 </div>
                 
                 <p className="showcase-subtitle">Tingkatkan Kualitas & Daya Tahan Atap Anda</p>
                 
                 <div className="showcase-badges">
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" className="badge">Material Premium</a>
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" className="badge">Instalasi Presisi</a>
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" className="badge">Garansi Resmi</a>
-                  <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" rel="noopener noreferrer" className="badge">Tahan Cuaca</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="badge">Material Premium</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="badge">Instalasi Presisi</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="badge">Garansi Resmi</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="badge">Tahan Cuaca</a>
                 </div>
               </div>
             </div>
@@ -55,7 +59,7 @@ export default function AboutSection() {
             </ul>
             
             <a 
-              href="https://wa.me/6281234567890?text=Halo%20Ratapin,%20saya%20ingin%20konsultasi%20tentang%20proyek%20atap" 
+              href="https://wa.me/628131322833?text=Halo%20Ratapin,%20saya%20ingin%20konsultasi%20tentang%20proyek%20atap" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="cta-button"

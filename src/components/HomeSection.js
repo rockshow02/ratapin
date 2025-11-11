@@ -198,109 +198,7 @@ const imageData = [
       },
     ]
   },
-  { 
-    title: "Baja Ringan", 
-    description: "Baja ringan kuat, tahan lama, efisien, dan mudah dipasang.", 
-    src: "/images/Baja-ringan.png",
-    gallery: [
-      { 
-        src: "/images/TasoC75.png", 
-        label: "Taso C75.65",
-        price: "Rp 125.000",
-        features: [
-          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
-          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
-          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
-          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
-          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
-        ],
-        specs: {
-          Panjang: "6m",
-          Tebal: "0.65mm"
-        }
-      },
-      { 
-        src: "/images/TasoC752.png", 
-        label: "Taso C75.75",
-        price: "Rp 135.000",
-        features: [
-          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
-          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
-          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
-          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
-          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
-        ],
-        specs: {
-          Panjang: "6m",
-          Tebal: "0.75mm"
-        }
-      },
-      { 
-        src: "/images/TasoC80.png", 
-        label: "Taso C75.80",
-        price: "Rp 150.000",
-        features: [
-          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
-          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
-          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
-          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
-          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
-        ],
-        specs: {
-          Panjang: "6m",
-          Tebal: "0.80mm"
-        }
-      },
-      { 
-        src: "/images/TasoC100.png", 
-        label: "Taso C75.100",
-        price: "Rp 187.000",
-        features: [
-          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
-          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
-          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
-          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
-          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
-        ],
-        specs: {
-          Panjang: "6m",
-          Tebal: "1mm"
-        }
-      },
-      { 
-        src: "/images/TasoRengMXR32.png", 
-        label: "Taso Reng MX R 32.45",
-        price: "Rp 65.000",
-        features: [
-          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
-          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
-          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
-          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
-          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
-        ],
-        specs: {
-          Panjang: "6m",
-          Tebal: "0.45mm"
-        }
-      },
-      { 
-        src: "/images/TasoReng40.png", 
-        label: "Taso Reng 40.45",
-        price: "Rp 90.000",
-        features: [
-          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
-          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
-          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
-          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
-          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
-        ],
-        specs: {
-          Panjang: "6m",
-          Tebal: "0.45mm"
-        }
-      },
-    ]
-  },
+ 
   { 
     title: "Tamco Shingles", 
     description: "Victory Shingles: Tamco Shingles ringan, tahan lama, anti bocor, elegan, dan mudah dipasang.", 
@@ -867,6 +765,109 @@ const imageData = [
       }
     ]
   },
+   { 
+    title: "Baja Ringan", 
+    description: "Baja ringan kuat, tahan lama, efisien, dan mudah dipasang.", 
+    src: "/images/Baja-ringan.png",
+    gallery: [
+      { 
+        src: "/images/TasoC75.png", 
+        label: "Taso C75.65",
+        price: "Rp 125.000",
+        features: [
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
+        ],
+        specs: {
+          Panjang: "6m",
+          Tebal: "0.65mm"
+        }
+      },
+      { 
+        src: "/images/TasoC752.png", 
+        label: "Taso C75.75",
+        price: "Rp 135.000",
+        features: [
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
+        ],
+        specs: {
+          Panjang: "6m",
+          Tebal: "0.75mm"
+        }
+      },
+      { 
+        src: "/images/TasoC80.png", 
+        label: "Taso C75.80",
+        price: "Rp 150.000",
+        features: [
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
+        ],
+        specs: {
+          Panjang: "6m",
+          Tebal: "0.80mm"
+        }
+      },
+      { 
+        src: "/images/TasoC100.png", 
+        label: "Taso C75.100",
+        price: "Rp 187.000",
+        features: [
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
+        ],
+        specs: {
+          Panjang: "6m",
+          Tebal: "1mm"
+        }
+      },
+      { 
+        src: "/images/TasoRengMXR32.png", 
+        label: "Taso Reng MX R 32.45",
+        price: "Rp 65.000",
+        features: [
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
+        ],
+        specs: {
+          Panjang: "6m",
+          Tebal: "0.45mm"
+        }
+      },
+      { 
+        src: "/images/TasoReng40.png", 
+        label: "Taso Reng 40.45",
+        price: "Rp 90.000",
+        features: [
+          "Taso model “C” digunakan sebagai rangka utama atap rumah dan gedung",
+          "Kuat dan serbaguna, juga cocok untuk baja konvensional",
+          "Dua taso “C” dapat digabung menjadi struktur kotak yang lebih kokoh",
+          "Reng baja ringan berfungsi sebagai dudukan genting dan pengikat rangka",
+          "Kombinasi taso & reng menciptakan rangka atap yang kuat, ringan, dan tahan lama"
+        ],
+        specs: {
+          Panjang: "6m",
+          Tebal: "0.45mm"
+        }
+      },
+    ]
+  },
 ]
 
 export default function HomeSection() {
@@ -1236,7 +1237,7 @@ export default function HomeSection() {
                 
                 <div className="popup-actions">
                   <a 
-                    href={`https://wa.me/6281234567890?text=Halo%20Ratapin,%20saya%20tertarik%20dengan%20${encodeURIComponent(selectedProduct.title)}%20-%20${encodeURIComponent(currentVariant.label)}${selectedColor ? `%20-%20Warna%20${encodeURIComponent(selectedColor.name)}` : ''}`}
+                    href={`https://wa.me/628131322833?text=Halo%20Ratapin,%20saya%20tertarik%20dengan%20${encodeURIComponent(selectedProduct.title)}%20-%20${encodeURIComponent(currentVariant.label)}${selectedColor ? `%20-%20Warna%20${encodeURIComponent(selectedColor.name)}` : ''}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="popup-cta primary"
@@ -1247,7 +1248,7 @@ export default function HomeSection() {
                     Pesan via WhatsApp
                   </a>
                   <a 
-                    href={`https://wa.me/6281234567890?text=Halo%20Ratapin,%20saya%20ingin%20menanyakan%20detail%20${encodeURIComponent(selectedProduct.title)}%20-%20${encodeURIComponent(currentVariant.label)}${selectedColor ? `%20-%20Warna%20${encodeURIComponent(selectedColor.name)}` : ''}`}
+                    href={`https://wa.me/628131322833?text=Halo%20Ratapin,%20saya%20ingin%20menanyakan%20detail%20${encodeURIComponent(selectedProduct.title)}%20-%20${encodeURIComponent(currentVariant.label)}${selectedColor ? `%20-%20Warna%20${encodeURIComponent(selectedColor.name)}` : ''}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="popup-cta secondary"
