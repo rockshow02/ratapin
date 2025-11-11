@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // penting agar hasil build jadi static HTML
   images: {
+    unoptimized: true, // wajib untuk static export
     remotePatterns: [
       {
         protocol: 'https',
@@ -15,14 +17,15 @@ const nextConfig = {
     ],
   },
   reactStrictMode: true,
-  // Optimize production build
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production' ? {
-      exclude: ['error', 'warn'],
-    } : false,
+    removeConsole:
+      process.env.NODE_ENV === 'production'
+        ? {
+            exclude: ['error', 'warn'],
+          }
+        : false,
   },
-  // Performance optimizations
   swcMinify: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

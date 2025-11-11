@@ -3142,3 +3142,42 @@ https://templatemo.com/tm-595-3d-coverflow
     }
 }
 
+/* app/globals.css */
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.show-more-btn {
+  /* reset dasar agar tidak ketimpa style bawaan */
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+  /* gaya tombol */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff;
+  color: #333;
+  border: 2px solid #ddd;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+.show-more-btn:hover {
+  background: #f8f8f8;
+  border-color: #bbb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+
+.show-more-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102,126,234,.25);
+}
